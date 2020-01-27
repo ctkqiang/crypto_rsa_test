@@ -10,16 +10,12 @@ import java.security.Key;
 import java.security.KeyPair;
 import java.security.KeyPairGenerator;
 import java.security.NoSuchAlgorithmException;
-
 import javax.crypto.Cipher;
-import javax.crypto.NoSuchPaddingException;
-
 /**
  * @Author: John Melody Melissa
  * @Project: Cryptography
  * @Inpired : By GF TAN SIN DEE <3
  */
-
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "ASYMMETRIC_ALGORITHM_RSA";
     private TextView Original, Encoded;

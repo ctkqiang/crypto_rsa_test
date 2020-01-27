@@ -16,7 +16,7 @@ import javax.crypto.Cipher;
  * @Project: Cryptography
  * @Inpired : By GF TAN SIN DEE <3
  */
-public class MainActivity extends AppCompatActivity {
+public class Crypto extends AppCompatActivity {
     private static final String TAG = "ASYMMETRIC_ALGORITHM_RSA";
     private TextView Original, Encoded;
     private String Decoded;

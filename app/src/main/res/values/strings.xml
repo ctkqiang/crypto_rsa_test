@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Crypto-test</string>
+    <string name="title">RSA {Asymmetric} </string>
+    <string name="decoded">This is a test soon to be encrypted</string>
+    <string name="RSA">RSA</string>
+</resources>

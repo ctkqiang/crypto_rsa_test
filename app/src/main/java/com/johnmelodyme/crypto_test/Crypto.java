@@ -2,9 +2,13 @@ package com.johnmelodyme.crypto_test;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Base64;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.TextView;
 import java.security.Key;
 import java.security.KeyPair;
@@ -67,5 +71,38 @@ public class Crypto extends AppCompatActivity {
         }
 
         Encoded.setText("Encoded:" + "\n" + Base64.encodeToString(ENCODED_BYTES, Base64.DEFAULT));
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return true;
+    }
+
+    @SuppressLint("LongLogTag")
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        int id = item.getItemId();
+        if (id == R.id.SourceCode) {
+            String URL;
+            URL = getResources().getString(R.string.url);
+            Intent SOURCE_CODE;
+            SOURCE_CODE = new Intent(Intent.ACTION_VIEW, Uri.parse(URL));
+            startActivity(SOURCE_CODE);
+            Log.w(TAG, "CRYPTO:" + "SOURCE_CODE ======> {REQUESTED:GITHUB --> OK}");
+            return true;
+        }
+
+        if (id == R.id.about){
+            String ABOUT;
+            ABOUT = getResources().getString(R.string.about);
+            Intent ABOUT_ME;
+            ABOUT_ME = new Intent(Intent.ACTION_VIEW, Uri.parse(ABOUT));
+            startActivity(ABOUT_ME);
+            Log.w(TAG, "CRYPTO:" + "ABOUT ======> {REQUESTED:JOHN_MELODY_MELISSA||SIN_DEE --> OK}");
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

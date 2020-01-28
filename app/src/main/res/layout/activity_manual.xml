@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".manual">
+
+    <EditText
+        android:id="@+id/original_text"
+        android:layout_width="414dp"
+        android:layout_height="165dp"
+        android:background="@null"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/enter_Text"
+        android:importantForAutofill="no"
+        android:inputType="textCapSentences|textNoSuggestions|textMultiLine"
+        android:maxLines="6"
+        android:minLines="3"
+        android:textColorHighlight="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/Encode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Original" />
+
+    <TextView
+        android:id="@+id/Original"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="@string/original"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toTopOf="@+id/original_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Encode"
+        android:layout_width="0dp"
+        android:layout_height="33dp"
+        android:text="@string/Encoded"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toTopOf="@+id/encoded_msg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/original_text" />
+
+    <TextView
+        android:id="@+id/encoded_msg"
+        android:layout_width="match_parent"
+        android:layout_height="259dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Encode" />
+
+    <Button
+        android:id="@+id/encode"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/encode"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,11 +1,17 @@
 <resources>
-    <string name="app_name">Crypto-test</string>
+    <string name="app_name">Crypto Encryption RSA</string>
     <string name="title">RSA {Asymmetric} </string>
     <string name="decoded">This is a test soon to be encrypted</string>
     <string name="RSA">RSA</string>
 
     <string name="item_scode">Source Code</string>
     <string name="item_about">About</string>
+    <string name="manual">Manual</string>
     <string name="url">https://raw.githubusercontent.com/johnmelodyme/crypto_rsa_test/master/app/src/main/java/com/johnmelodyme/crypto_test/Crypto.java</string>
     <string name="about">https://johnmelodyme.github.io/</string>
+
+    <string name="original">Original Text: </string>
+    <string name="Encoded">Encoded: </string>
+    <string name="enter_Text">Enter Text</string>
+    <string name="encode">ENCODE</string>
 </resources>

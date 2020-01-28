@@ -8,9 +8,16 @@
         app:showAsAction="ifRoom"/>
 
     <item
+        android:id="@+id/Manual"
+        android:icon="@drawable/manual"
+        android:title="@string/manual"
+        app:showAsAction="collapseActionView"/>
+
+    <item
         android:id="@+id/about"
         android:icon="@drawable/about"
         android:title="@string/item_about"
-        app:showAsAction="ifRoom"/>
+        app:showAsAction="collapseActionView"/>
+
 
 </menu>

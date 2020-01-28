@@ -100,7 +100,15 @@ public class Crypto extends AppCompatActivity {
             Intent ABOUT_ME;
             ABOUT_ME = new Intent(Intent.ACTION_VIEW, Uri.parse(ABOUT));
             startActivity(ABOUT_ME);
-            Log.w(TAG, "CRYPTO:" + "ABOUT ======> {REQUESTED:JOHN_MELODY_MELISSA||SIN_DEE --> OK}");
+            Log.w(TAG, "CRYPTO:" + "ABOUT ======> {REQUESTED:JOHN_MELODY_MELISSA||SIN_DEE --> {OK} }");
+            return true;
+        }
+
+        if (id == R.id.Manual){
+            Intent toManual;
+            toManual = new Intent(Crypto.this, manual.class);
+            startActivity(toManual);
+            Log.w(TAG, "CRYPTO:" + "To Manual");
             return true;
         }
         return super.onOptionsItemSelected(item);
